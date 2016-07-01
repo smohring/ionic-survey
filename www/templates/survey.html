@@ -1,0 +1,15 @@
+<ion-view class="survey" hide-nav-bar="false" swipe>
+
+    <ion-nav-title>Messe 2015</ion-nav-title>
+
+    <ion-content class="has-header has-footer" scroll="false" padding="true">
+       <add-questions></add-questions>
+    </ion-content>
+
+    <ion-footer-bar class="bar-positive">
+        <button ng-click="vm.goto('prev')" class="button button-balanced pull-left"><i class="ion-arrow-left-c"></i> Prev</button>
+        <indicator class="pull-center"></indicator>
+        <button ng-click="vm.goto('next')" ng-class="{'button-light' : !vm.isFinished, 'button-balanced' : vm.isFinished}" class="button pull-right">Next <i class="ion-arrow-right-c"></i></button>
+    </ion-footer-bar>
+
+</ion-view>

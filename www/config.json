@@ -1,0 +1,124 @@
+{
+  "survey": [
+    {
+      "title": "Frage 1",
+      "questions": [
+        {
+          "title": "Ist dies Ihr erster Besuch auf der FromNext ?",
+          "type": "radio",
+          "selected" : null,
+          "options": [
+            { "text" : "Ja" },
+            { "text" : "Nein" }
+          ],
+          "required" : true,
+          "requiredText" : "Bitte wählen Sie eine Antwort"
+        }
+      ]
+    },
+    {
+      "title": "Frage 2",
+      "questions": [
+        {
+          "title": "Besuchen Sie die Messe mehr aus beruflichem oder geschäftlichem Interesse?",
+          "type": "checkbox",
+          "options": [
+            { "text" : "Beruflich", "checked" : false },
+            { "text" : "Geschäftlich", "checked" : false }
+          ],
+          "required" : ">0",
+          "requiredText" : "Bitte wählen Sie eine Antwort"
+        }
+      ]
+    },
+    {
+      "title": "Frage 3",
+      "questions": [
+        {
+          "title": "Wie sind Sie auf die Messe aufmerksam geworden?",
+          "type": "checkbox",
+          "options": [
+            { "text" : "Tageszeitung", "checked" : false },
+            { "text" : "Einladung durch Aussteller", "checked" : false },
+            { "text" : "Flyer", "checked" : false },
+            { "text" : "Empfehlung durch Verein / Verband", "checked" : false },
+            { "text" : "Plakate", "checked" : false },
+            { "text" : "Internet", "checked" : false },
+            { "text" : "Sonstige", "checked" : false }
+          ],
+          "required" : ">1",
+          "requiredText" : null
+        }
+      ]
+    },
+    {
+      "title": "Frage 4",
+      "questions": [
+        {
+          "title": "Bewerten Sie folgende Aussagen:",
+          "type": "rangeslider",
+          "options": [
+            { "text" : "Die Messe hat meine Erwartungen erüllt:", "lefttext" : "0%", "righttext" : "100%", "step" : 100 },
+            { "text" : "Ich werde die Messe das nächste mal wieder besuchen:", "lefttext" : "Ja", "righttext" : "Nein", "step" : 100 }
+          ],
+          "required" : false,
+          "requiredText" : null
+        }
+      ]
+    },
+    {
+      "title": "Frage 5",
+      "scroll" : false,
+      "questions": [
+        {
+          "title": "Ordnen Sie die folgenden Begriffe Ihren Produktkategorien zu:",
+          "type": "dragdrop",
+          "dropoptions": [
+            { "text" : "Werkzeug und Formenbau"},
+            { "text" : "Systeme und Anlagen für Additive Technologien & 3D-Druck"},
+            { "text" : "Werkzeugmaschinen"}
+          ],
+          "dragoptions": [
+            { "text" : "Spritzgießwerkzeuge" },
+            { "text" : "Umformwerkzeuge" },
+            { "text" : "Druckgießwerkzeuge" },
+            { "text" : "Photo Polymerisation" },
+            { "text" : "Binder Jetting" },
+            { "text" : "Powder Bed Fusion" },
+            { "text" : "Bohrmaschinen" },
+            { "text" : "Laserbearbeitung" },
+            { "text" : "Sägemaschinen" }
+          ],
+          "required" : false,
+          "requiredText" : null
+        }
+      ]
+    },
+    {
+      "title": "Frage 6",
+      "questions": [
+        {
+          "title" : "Was fanden Sie auf der Messe besonders gut, bzw. besonders schlecht?",
+          "type" : "textarea",
+          "message" : null,
+          "required": false,
+          "requiredText" : null
+        }
+      ]
+    },
+    {
+      "title": "Kontakt",
+      "questions": [
+        {
+          "title": "Sind Sie an unserem Newsletter interessiert? Dann hinterlassen Sie uns doch Ihre Kontaktdaten!",
+          "type": "inputfields",
+          "options": [
+            { "text" : "Name des Betriebs:"},
+            { "text" : "Ansprechpartner"},
+            { "text" : "e-Mail"}
+          ]
+        }
+      ]
+    }
+  ]
+}

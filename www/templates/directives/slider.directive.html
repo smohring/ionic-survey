@@ -1,0 +1,21 @@
+<h1 class="title">{{data.title}}</h1>
+
+<ion-slide-box disable-swipe>
+    <ion-slide >
+        <div class="box blue"></div>
+        <rating ng-model="rate" max="5"></rating>
+
+    </ion-slide>
+    <ion-slide>
+        <div class="box yellow"></div>
+        <rating ng-model="rate" max="5"></rating>
+
+    </ion-slide>
+    <ion-slide>
+        <div class="box pink"></div>
+        <rating ng-model="rate" max="5"></rating>
+
+    </ion-slide>
+</ion-slide-box>
+
+<span class="requiredText">{{data.requiredText}}</span>

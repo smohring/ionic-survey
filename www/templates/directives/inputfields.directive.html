@@ -1,0 +1,10 @@
+<h1 class="title">{{data.title}}</h1>
+
+<div class="list">
+
+    <label class="item item-input item-stacked-label" ng-repeat="option in data.options track by $index">
+        <span class="input-label">{{option.text}}</span>
+        <input ng-model="option.value" type="text" placeholder="">
+    </label>
+</div>
+<span class="requiredText">{{data.requiredText}}</span>

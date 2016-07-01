@@ -1,0 +1,6 @@
+<h1 class="title">{{data.title}}</h1>
+
+<div class="list">
+    <ion-checkbox ng-model="option.checked" ng-repeat="option in data.options track by $index">{{option.text}}</ion-checkbox>
+</div>
+<span class="requiredText">{{data.requiredText}}</span>

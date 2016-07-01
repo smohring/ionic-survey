@@ -1,0 +1,15 @@
+<h1 class="title">{{data.title}}</h1>
+
+<div class="dropoptions" disable-swipe>
+    <div ng-drop="true" ng-drop-success="onDropComplete($index,$event)" ng-repeat="option in data.dropoptions track by $index">
+        <h3>{{option.text}}</h3>
+        <ul ng-if="option.selected">
+            <li ng-repeat="droppedItem in option.selected track by $index">{{droppedItem.text}}</li>
+        </ul>
+    </div>
+</div>
+
+<div class="dragoptions" disable-swipe>
+    <div ng-drag="true" data-allow-transform="true" ng-drag-data="$index" ng-drag-success="onDragComplete($index,$event)" ng-repeat="source in data.dragoptions track by $index">{{source.text}}</div>
+</div>
+<span class="requiredText">{{data.requiredText}}</span>

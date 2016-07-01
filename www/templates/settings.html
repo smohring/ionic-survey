@@ -1,0 +1,31 @@
+<!-- The title of the ion-view will be shown on the navbar -->
+<ion-view>
+
+    <ion-nav-title>Settings</ion-nav-title>
+
+    <ion-content class="has-header has-footer" scroll="true" padding="true">
+        <!-- The content of the page -->
+        <div class="list">
+            <label class="item item-input item-stacked-label">
+                <span class="input-label">UUID</span>
+                <input ng-model="vm.uuid" type="text" placeholder="">
+            </label>
+        </div>
+
+        <div>
+            <button class="button button-half button-balanced">
+                Export to Server
+            </button>
+            <button class="button button-full button-balanced">
+                Save
+            </button>
+        </div>
+
+    </ion-content>
+
+    <ion-footer-bar class="bar-positive">
+        <button ui-sref="home" class="button button-balanced pull-left"><i class="ion-arrow-left-c"></i> Home</button>
+    </ion-footer-bar>
+</ion-view>
+
+

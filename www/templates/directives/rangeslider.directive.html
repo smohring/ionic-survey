@@ -1,0 +1,16 @@
+<h1 class="title">{{data.title}}</h1>
+
+<div class="list">
+
+    <div class="item" ng-repeat="option in data.options track by $index">
+        <div>{{option.text}}</div>
+        <div class="range range-positive" disable-swipe>
+            <span>{{option.lefttext}}</span>
+            <input type="range" name="volume" min="0" max="100" ng-model="option.value">
+            <span>{{option.righttext}}</span>
+        </div>
+
+    </div>
+
+</div>
+<span class="requiredText">{{data.requiredText}}</span>
